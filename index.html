@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable YouTube Logo</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+        .youtube-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .youtube-icon {
+            width: 100px;
+            height: 70px;
+            background-color: #FF0000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+
+        .youtube-icon::before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 35px solid white;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+
+        .youtube-text {
+            font-size: 72px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #673AB7; /* Purple color */
+        }
+
+        /* Add hover effect */
+        .youtube-logo:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.youtube.com" target="_blank" class="youtube-logo">
+        <div class="youtube-icon"></div>
+        <div class="youtube-text">YouTube</div>
+    </a>
+</body>
+</html>
